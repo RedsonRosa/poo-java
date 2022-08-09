@@ -1,0 +1,33 @@
+package ifsc;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class program1 {
+
+	public static void main(String[] args) {
+	
+		//Lista em Java				
+		List<String> lista = new ArrayList<>();
+		lista.add("Red");
+		lista.add("Ola");
+		lista.add("Ei");
+		
+		System.out.println("Quantidade de nomes na lista: " + lista.size() + "\n");
+		
+		System.out.println("Nomes presentes na lista: " + lista + "\n");
+		
+		System.out.println("Lista ao contrário: ");
+		
+		for (String str : lista) {			
+			StringBuffer sbr = new StringBuffer(str);	
+			
+			sbr.reverse();
+			
+			System.out.println(sbr);			
+		}    
+	}	
+}
+	
+
+
